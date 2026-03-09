@@ -106,7 +106,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="firstName"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">First Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">First Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <FormControl>
                                             <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                         </FormControl>
@@ -119,7 +119,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="lastName"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Last Name</FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Last Name</FormLabel>
                                         <FormControl>
                                             <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                         </FormControl>
@@ -134,7 +134,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Email<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Email<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <FormControl>
                                             <Input type="email" {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                         </FormControl>
@@ -147,10 +147,10 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="phone"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Phone Number<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Phone Number<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <div className="flex gap-4 items-end">
                                             {/* Country Selector */}
-                                            <div className="flex items-center gap-2 pb-2.5 bg-transparent border-b border-gray-300 text-foreground font-medium min-w-[60px]">
+                                            <div className="flex items-center gap-2 pb-2.5 bg-transparent border-b border-gray-300 text-[#652b32] font-medium min-w-[60px]">
                                                 <span className="text-sm font-bold tracking-tight">{dialCode}</span>
                                             </div>
 
@@ -178,7 +178,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="date"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Slot Date<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Slot Date<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <FormControl>
                                             <Input type="date" {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                         </FormControl>
@@ -191,7 +191,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                                 name="slotTime"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Slot Time<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Slot Time<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <FormControl>
                                             <Input type="time" {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                         </FormControl>
@@ -206,7 +206,7 @@ export const PodcastBookingDialog: React.FC<PodcastBookingDialogProps> = ({
                             name="message"
                             render={({ field }) => (
                                 <FormItem className="space-y-3">
-                                    <FormLabel className="text-[#333] text-[16px] font-bold uppercase tracking-wide">Message<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                    <FormLabel className="text-[#652b32] text-[16px] font-bold uppercase tracking-wide">Message<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                     <FormControl>
                                         <Textarea
                                             {...field}

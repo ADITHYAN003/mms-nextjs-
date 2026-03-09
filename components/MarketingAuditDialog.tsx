@@ -408,7 +408,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="firstName"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">First Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">First Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                             <FormControl>
                                                 <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                             </FormControl>
@@ -421,7 +421,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="lastName"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">Last Name</FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">Last Name</FormLabel>
                                             <FormControl>
                                                 <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                             </FormControl>
@@ -435,7 +435,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="email"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">Email<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">Email<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                             <FormControl>
                                                 <Input type="email" {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                             </FormControl>
@@ -448,7 +448,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="phone"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">Phone Number<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">Phone Number<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                             <div className="relative" ref={dropdownRef}>
                                                 <div className="flex gap-4 items-end">
                                                     <div className="relative flex-shrink-0">
@@ -456,7 +456,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                                             ref={countryBtnRef}
                                                             type="button"
                                                             onClick={() => setShowCountryDropdown(!showCountryDropdown)}
-                                                            className="flex items-center gap-2 pb-2.5 bg-transparent border-b border-gray-300 hover:border-[#652b32] transition-colors text-foreground font-medium min-w-[100px] justify-between"
+                                                            className="flex items-center gap-2 pb-2.5 bg-transparent border-b border-gray-300 hover:border-[#652b32] transition-colors text-[#652b32] font-medium min-w-[100px] justify-between"
                                                         >
                                                             <span className="flex items-center gap-2">
                                                                 <ReactCountryFlag
@@ -477,7 +477,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                                             >
                                                                 <div className="p-3 border-b border-gray-100 bg-gray-50/50">
                                                                     <div className="relative">
-                                                                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                                                                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#652b32]/40" />
                                                                         <input
                                                                             type="text"
                                                                             value={searchTerm}
@@ -503,8 +503,8 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                                                                     style={{ width: '20px', height: '15px' }}
                                                                                 />
                                                                                 <div className="flex-1">
-                                                                                    <div className="text-sm font-medium text-gray-900">{country.name}</div>
-                                                                                    <div className="text-xs text-gray-500">{country.dial_code}</div>
+                                                                                    <div className="text-sm font-medium text-[#652b32]">{country.name}</div>
+                                                                                    <div className="text-xs text-[#652b32]/60">{country.dial_code}</div>
                                                                                 </div>
                                                                                 {selectedCountry.code === country.code && (
                                                                                     <Check className="w-4 h-4 text-[#652b32]" />
@@ -512,7 +512,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                                                             </button>
                                                                         ))
                                                                     ) : (
-                                                                        <div className="p-6 text-center text-sm text-gray-500">No results found</div>
+                                                                        <div className="p-6 text-center text-sm text-[#652b32]/60">No results found</div>
                                                                     )}
                                                                 </div>
                                                             </div>,
@@ -544,7 +544,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="companyName"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">Company Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">Company Name<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                             <FormControl>
                                                 <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                             </FormControl>
@@ -557,7 +557,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                     name="website"
                                     render={({ field }) => (
                                         <FormItem className="space-y-3">
-                                            <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">Website<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                            <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">Website<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                             <FormControl>
                                                 <Input {...field} className="h-12 border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus-visible:border-[#652b32] px-0 bg-transparent text-lg transition-all" />
                                             </FormControl>
@@ -572,7 +572,7 @@ export const MarketingAuditDialog: React.FC<MarketingAuditDialogProps> = ({
                                 name="message"
                                 render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="text-[#333] text-[14px] font-bold uppercase tracking-wide">What can we do for you?<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
+                                        <FormLabel className="text-[#652b32] text-[14px] font-bold uppercase tracking-wide">What can we do for you?<span className="text-red-500 ml-1 font-bold">*</span></FormLabel>
                                         <FormControl>
                                             <Textarea
                                                 {...field}

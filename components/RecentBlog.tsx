@@ -18,18 +18,18 @@ export const RecentBlog = () => {
             <div className="container mx-auto px-6 md:px-12">
                 <div className="flex flex-col md:flex-row items-end justify-between gap-8 mb-16">
                     <div>
-                        <h2 className="text-3xl md:text-6xl font-black text-[#652b32] mb-6 uppercase tracking-tight font-heading leading-tight">
-                            Recent <span className="text-yellow-500">Blog</span>
+                        <h2 className="text-[clamp(2.5rem,8vw,5.5rem)] font-black text-[#652b32] mb-6 uppercase tracking-tight font-heading leading-[0.9]">
+                            Recent <span className="italic opacity-70">Blog</span>
                         </h2>
-                        <p className="text-[#652b32]/60 text-xl font-medium">
+                        <p className="text-[#652b32]/60 text-base md:text-xl font-medium tracking-tight uppercase">
                             The latest insights from our creative team
                         </p>
                     </div>
                     <Link
                         href="/blog"
-                        className="inline-flex items-center gap-3 bg-white text-[#652b32] px-10 py-4 rounded-full font-black uppercase tracking-widest text-[11px] shadow-lg hover:shadow-xl transition-all border border-[#652b32]/5 active:scale-95"
+                        className="inline-flex items-center gap-3 bg-[#652b32] text-[#fff8eb] px-10 py-5 rounded-full font-black uppercase tracking-widest text-[11px] shadow-2xl hover:shadow-primary/20 transition-all border border-[#652b32]/5 active:scale-95 group"
                     >
-                        View All Posts <ArrowRight className="w-4 h-4" />
+                        View All Posts <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                 </div>
 

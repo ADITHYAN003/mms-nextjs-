@@ -72,3 +72,13 @@ export async function sendQuoteRequest(data: any): Promise<any> {
     }
     return response.json();
 }
+
+export async function fetchAllBlogPostSlugs(): Promise<string[]> {
+    const response = await fetch(
+        `${WP_URL}/posts?per_page=100&_fields=slug&t=${Date.now()}`,
+        { cache: "no-store" }
+    );
+    if (!response.ok) return [];
+    const posts = await response.json();
+    return posts.map((post: any) => post.slug);
+}

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useQuery } from "@tanstack/react-query";
 import gsap from "gsap";
@@ -250,6 +251,20 @@ const DigitalMarketing = () => {
             <SEO
                 title="Top Digital Marketing Agency for Brands - Contact Now"
                 description="Partner with a top digital marketing agency that turns clicks into customers and grows traffic, leads, and sales—book a free call now!"
+                canonical="/services/digital-marketing-agency/"
+                keywords="digital marketing agency, marketing agency for small business, affordable digital marketing, SEO, SMM, SEM, growth marketing, Coimbatore digital agency"
+                structuredData={[
+                    generateBreadcrumbSchema([
+                        { name: "Home", url: "/" },
+                        { name: "Services", url: "/services/" },
+                        { name: "Digital Marketing", url: "/services/digital-marketing-agency/" }
+                    ]),
+                    generateServiceSchema({
+                        name: "Digital Marketing Agency Services",
+                        description: "Strategic digital marketing services including SEO, SEM, SMM, and email marketing for business growth."
+                    }),
+                    generateOrganizationSchema()
+                ]}
             />
 
             <div ref={sectionRef} className="min-h-screen">
@@ -314,7 +329,9 @@ const DigitalMarketing = () => {
                                     <>
                                         <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-5 group-hover:bg-[#652b32]/10 transition-colors">
                                             {typeof s.icon === 'string' ? (
-                                                <img src={s.icon} alt={s.title} className="w-9 h-9 object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all" />
+                                                <div className="relative w-9 h-9 brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all">
+                                                    <Image src={s.icon} alt={s.title} fill className="object-contain" />
+                                                </div>
                                             ) : null}
                                         </div>
                                         <h3 className="text-lg font-heading font-semibold text-white group-hover:text-[#652b32] mb-3 transition-colors">
@@ -371,7 +388,9 @@ const DigitalMarketing = () => {
                                     className="why-card group bg-[#652b32] rounded-xl p-7 shadow-xl border border-white/10 hover:border-[#652b32]/20 transition-all duration-300 text-center hover:bg-[#faf3e0] hover:-translate-y-3 hover:scale-[1.02]"
                                 >
                                     <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-[#652b32]/10 transition-colors">
-                                        <img src={item.icon} alt={item.title} className="w-9 h-9 object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all" />
+                                        <div className="relative w-9 h-9 brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all">
+                                            <Image src={item.icon} alt={item.title} fill className="object-contain" />
+                                        </div>
                                     </div>
                                     <h3 className="text-lg font-heading font-semibold text-white group-hover:text-[#652b32] mb-3 transition-colors">
                                         {item.title}

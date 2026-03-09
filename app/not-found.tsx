@@ -29,15 +29,15 @@ export default function NotFound() {
 
                 {/* Right Content */}
                 <div className="text-center md:text-left">
-                    <h1 className="text-5xl font-extrabold text-black mb-3">
+                    <h1 className="text-5xl font-extrabold text-[#652b32] mb-3">
                         Ooops...
                     </h1>
 
-                    <h2 className="text-3xl font-light text-gray-700 mb-4">
+                    <h2 className="text-3xl font-light text-[#652b32] mb-4">
                         Page Not Found
                     </h2>
 
-                    <p className="text-gray-500 mb-6 max-w-sm">
+                    <p className="text-[#652b32]/70 mb-6 max-w-sm">
                         Sorry, the content you're looking for doesn't exist. Either it was
                         removed, or you mistyped the link.
                     </p>

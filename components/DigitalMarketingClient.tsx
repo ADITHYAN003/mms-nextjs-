@@ -257,14 +257,15 @@ export function DigitalMarketingClient() {
                 </div>
             </section>
 
-            <section id="services" className="py-20 md:py-32 bg-[#faf3e0]">
+            <section id="services" className="py-24 md:py-32 bg-background">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#652b32] mb-6 font-heading leading-tight">
-                            What Do We Offer to Our Clients?
+                    <div className="text-center mb-20">
+                        <h2 className="text-4xl md:text-6xl font-black text-[#652b32] mb-8 font-heading leading-tight tracking-tight uppercase">
+                            What Do We Offer to <br className="hidden md:block" />
+                            Our <span className="text-[#FACC15]">Clients?</span>
                         </h2>
-                        <p className="text-[#652b32]/60 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
-                            The services of our digital marketing company are aimed at making our company more visible, engaging, and selling. You can utilize our services to either undertake small business or enterprise level campaigns such as digital marketing services that deliver measurable outcomes.
+                        <p className="text-base md:text-lg text-[#652b32]/60 max-w-4xl mx-auto leading-relaxed font-medium">
+                            The services of our digital marketing company are aimed at making our company more visible, engaging, and selling. You can utilize our services to either undertake small business or enterprise level campaigns.
                         </p>
                     </div>
 
@@ -273,19 +274,19 @@ export function DigitalMarketingClient() {
                             <div
                                 key={i}
                                 onClick={() => s.link && router.push(s.link)}
-                                className={`service-card group bg-[#652b32] rounded-3xl p-8 md:p-10 shadow-xl border border-white/10 hover:border-[#652b32]/20 transition-all duration-500 hover:bg-white hover:-translate-y-4 hover:scale-[1.02] cursor-pointer`}
+                                className="service-card p-12 rounded-[3.5rem] bg-[#fff8eb] border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
                             >
-                                <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-8 group-hover:bg-[#652b32]/10 transition-colors">
-                                    <Image src={s.icon} alt={s.title} width={40} height={40} className="object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all" />
+                                <div className="w-20 h-20 rounded-3xl bg-[#652b32]/5 flex items-center justify-center mb-10 group-hover:bg-[#faf3e0]/10 transition-colors">
+                                    <Image src={s.icon} alt={s.title} width={40} height={40} className="object-contain brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all group-hover:brightness-0 group-hover:invert" />
                                 </div>
-                                <h3 className="text-xl font-black text-white group-hover:text-[#652b32] mb-4 transition-colors font-heading leading-tight">
+                                <h3 className="text-2xl font-black text-[#652b32] mb-6 font-heading group-hover:text-white leading-tight uppercase tracking-tight">
                                     {s.title}
                                 </h3>
-                                <p className="text-white/70 text-sm leading-relaxed group-hover:text-[#652b32]/80 transition-colors font-medium">
+                                <p className="text-[#652b32]/60 leading-relaxed text-sm group-hover:text-white/80 font-medium">
                                     {s.desc}
                                 </p>
                                 {s.link && (
-                                    <div className="mt-8 flex items-center gap-2 text-white/50 group-hover:text-[#652b32] font-black uppercase tracking-widest text-[10px] transition-colors">
+                                    <div className="mt-8 flex items-center gap-2 text-[#652b32]/40 group-hover:text-yellow-400 font-black uppercase tracking-widest text-[10px] transition-colors">
                                         Learn More <ArrowRight className="w-3.5 h-3.5" />
                                     </div>
                                 )}

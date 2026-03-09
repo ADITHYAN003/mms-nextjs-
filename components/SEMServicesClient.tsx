@@ -236,8 +236,7 @@ export function SEMServicesClient() {
                 </div>
             </section>
 
-            {/* Services Section */}
-            <section className="py-24 md:py-32 px-6 bg-[#faf3e0]">
+            <section className="py-24 md:py-32 px-6 bg-background">
                 <div className="container mx-auto max-w-7xl">
                     <motion.div
                         className="text-center mb-20"
@@ -246,9 +245,12 @@ export function SEMServicesClient() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-3xl md:text-7xl font-black text-[#652b32] mb-10 font-heading leading-tight tracking-tight uppercase">
-                            SEM & <span className="text-yellow-600">Paid Advertising</span>
+                        <h2 className="text-4xl md:text-6xl font-black text-[#652b32] mb-8 font-heading leading-tight tracking-tight uppercase">
+                            SEM & <span className="text-[#FACC15]">Paid Advertising</span>
                         </h2>
+                        <p className="text-base md:text-lg text-[#652b32]/60 max-w-4xl mx-auto leading-relaxed font-medium">
+                            Higher traffic and sales with our search engine marketing agency. We design SEM campaigns that drive immediate results.
+                        </p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -260,15 +262,15 @@ export function SEMServicesClient() {
                         ].map((s, i) => (
                             <motion.div
                                 key={s.title}
-                                className="p-12 rounded-[3.5rem] bg-white border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
+                                className="p-12 rounded-[3.5rem] bg-[#fff8eb] border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
                                 custom={i}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
                                 variants={cardVariants}
                             >
-                                <div className="w-20 h-20 rounded-3xl bg-[#652b32]/5 flex items-center justify-center mb-10 group-hover:bg-white/10 transition-colors">
-                                    <s.icon size={40} className="text-[#652b32] group-hover:text-yellow-400" />
+                                <div className="w-20 h-20 rounded-3xl bg-[#652b32]/5 flex items-center justify-center mb-10 group-hover:bg-[#faf3e0]/10 transition-colors">
+                                    <s.icon size={40} className="text-[#FACC15] group-hover:text-[#faf3e0]" />
                                 </div>
                                 <h3 className="text-3xl font-black text-[#652b32] mb-6 font-heading group-hover:text-white leading-tight uppercase tracking-tight">
                                     {s.title}

@@ -576,7 +576,7 @@ export const Contact = () => {
             {/* Background */}
             <div className="absolute inset-0 opacity-[0.025]" style={{
                 backgroundImage: `
-          radial-gradient(circle at 2px 2px, hsl(var(--foreground)) 1px, transparent 0)
+          radial-gradient(circle at 2px 2px, #652b32 1px, transparent 0)
         `,
                 backgroundSize: "50px 50px",
             }} />
@@ -584,27 +584,27 @@ export const Contact = () => {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-10 md:mb-14" style={{ perspective: "1000px" }}>
-                    <span className="block text-base font-semibold tracking-wider text-foreground/40 mb-4 uppercase">
+                    <span className="block text-base font-semibold tracking-wider text-[#652b32]/40 mb-4 uppercase">
                         Get In Touch
                     </span>
-                    <h2 className="text-[clamp(3rem,10vw,7.5rem)] font-black text-foreground leading-[0.85] mb-12 flex flex-col md:flex-row items-center md:items-baseline justify-center md:gap-6">
+                    <h2 className="text-[clamp(3rem,10vw,7.5rem)] font-black text-[#652b32] leading-[0.85] mb-12 flex flex-col md:flex-row items-center md:items-baseline justify-center md:gap-6">
                         <span className="text-inherit uppercase">{splitHeading("Contact")}</span>
-                        <span className="italic font-normal text-foreground/60 text-[0.35em] md:text-[0.3em] tracking-tight">{splitHeading("Us")}</span>
+                        <span className="italic font-normal text-[#652b32]/60 text-[0.35em] md:text-[0.3em] tracking-tight">{splitHeading("Us")}</span>
                     </h2>
-                    <div className="w-24 h-[1.5px] bg-foreground/30 mx-auto rounded-full" />
+                    <div className="w-24 h-[1.5px] bg-[#652b32]/30 mx-auto rounded-full" />
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 max-w-6xl mx-auto">
                     {/* Form */}
                     <div>
-                        <p className="contact-item text-lg md:text-xl text-foreground/50 mb-8">
+                        <p className="contact-item text-lg md:text-xl text-[#652b32]/50 mb-8">
                             You have a project in mind? Let's create something amazing together for you.
                         </p>
 
                         <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                             {/* Name Field */}
                             <div className="contact-item">
-                                <label className="block text-base md:text-sm font-bold text-foreground/80 mb-2 uppercase tracking-[0.15em]">
+                                <label className="block text-base md:text-sm font-bold text-[#652b32]/80 mb-2 uppercase tracking-[0.15em]">
                                     Name *
                                 </label>
                                 <input
@@ -612,7 +612,7 @@ export const Contact = () => {
                                     value={formData.name}
                                     onChange={(e) => handleInputChange("name", e.target.value)}
                                     required
-                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-foreground placeholder:text-foreground/50 font-medium text-lg md:text-base ${errors.name ? "border-red-500" : "border-foreground/20 focus:border-foreground"
+                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-[#652b32] placeholder:text-[#652b32]/50 font-medium text-lg md:text-base ${errors.name ? "border-red-500" : "border-[#652b32]/20 focus:border-[#652b32]"
                                         }`}
                                     placeholder="Your name"
                                 />
@@ -626,7 +626,7 @@ export const Contact = () => {
 
                             {/* Email Field */}
                             <div className="contact-item">
-                                <label className="block text-base md:text-sm font-bold text-foreground/80 mb-2 uppercase tracking-[0.15em]">
+                                <label className="block text-base md:text-sm font-bold text-[#652b32]/80 mb-2 uppercase tracking-[0.15em]">
                                     Email *
                                 </label>
                                 <input
@@ -634,7 +634,7 @@ export const Contact = () => {
                                     value={formData.email}
                                     onChange={(e) => handleInputChange("email", e.target.value)}
                                     required
-                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-foreground placeholder:text-foreground/50 font-medium text-lg md:text-base ${errors.email ? "border-red-500" : "border-foreground/20 focus:border-foreground"
+                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-[#652b32] placeholder:text-[#652b32]/50 font-medium text-lg md:text-base ${errors.email ? "border-red-500" : "border-[#652b32]/20 focus:border-[#652b32]"
                                         }`}
                                     placeholder="your@email.com"
                                 />
@@ -648,7 +648,7 @@ export const Contact = () => {
 
                             {/* Phone Input with Country Dropdown */}
                             <div className="contact-item">
-                                <label className="block text-base md:text-sm font-bold text-foreground/80 mb-2 uppercase tracking-[0.15em]">
+                                <label className="block text-base md:text-sm font-bold text-[#652b32]/80 mb-2 uppercase tracking-[0.15em]">
                                     Phone Number {formData.phone.length > 0 ? "" : "(Optional)"}
                                 </label>
                                 <div className="relative" ref={dropdownRef}>
@@ -659,7 +659,7 @@ export const Contact = () => {
                                                 ref={countryBtnRef}
                                                 type="button"
                                                 onClick={() => setShowCountryDropdown(!showCountryDropdown)}
-                                                className="flex items-center gap-2 px-3 md:px-4 py-3 bg-transparent border-[1.5px] border-foreground/20 rounded-xl hover:border-foreground/50 transition-colors text-foreground font-medium min-w-[100px] md:min-w-[130px] justify-between"
+                                                className="flex items-center gap-2 px-3 md:px-4 py-3 bg-transparent border-[1.5px] border-[#652b32]/20 rounded-xl hover:border-[#652b32]/50 transition-colors text-[#652b32] font-medium min-w-[100px] md:min-w-[130px] justify-between"
                                             >
                                                 <span className="flex items-center gap-2">
                                                     <ReactCountryFlag
@@ -742,12 +742,12 @@ export const Contact = () => {
                                                 type="tel"
                                                 value={formData.phone}
                                                 onChange={handlePhoneChange}
-                                                className={`w-full px-4 md:px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-foreground placeholder:text-foreground/50 font-medium text-lg md:text-base ${errors.phone ? "border-red-500" : "border-foreground/20 focus:border-foreground"
+                                                className={`w-full px-4 md:px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all text-[#652b32] placeholder:text-[#652b32]/50 font-medium text-lg md:text-base ${errors.phone ? "border-red-500" : "border-[#652b32]/20 focus:border-[#652b32]"
                                                     }`}
                                                 placeholder="Enter 10-digit number"
                                                 maxLength={10}
                                             />
-                                            <div className="mt-1 text-[10px] md:text-xs text-foreground/40 hidden sm:block">
+                                            <div className="mt-1 text-[10px] md:text-xs text-[#652b32]/40 hidden sm:block">
                                                 {formData.phone ? `${formData.phone.length}/10 digits` : "Enter phone number (optional)"}
                                             </div>
                                         </div>
@@ -763,7 +763,7 @@ export const Contact = () => {
 
                                     {/* Display full number preview */}
                                     {formData.phone && !errors.phone && (
-                                        <div className="mt-2 text-xs text-foreground/60">
+                                        <div className="mt-2 text-xs text-[#652b32]/60">
                                             Full number: {selectedCountry.dial_code} {formData.phone}
                                         </div>
                                     )}
@@ -772,7 +772,7 @@ export const Contact = () => {
 
                             {/* Message Field */}
                             <div className="contact-item">
-                                <label className="block text-base md:text-sm font-bold text-foreground/80 mb-2 uppercase tracking-[0.15em]">
+                                <label className="block text-base md:text-sm font-bold text-[#652b32]/80 mb-2 uppercase tracking-[0.15em]">
                                     Message *
                                 </label>
                                 <textarea
@@ -780,7 +780,7 @@ export const Contact = () => {
                                     onChange={(e) => handleInputChange("message", e.target.value)}
                                     required
                                     rows={5}
-                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all resize-none text-foreground placeholder:text-foreground/50 font-medium text-lg md:text-base ${errors.message ? "border-red-500" : "border-foreground/20 focus:border-foreground"
+                                    className={`w-full px-5 py-3 bg-transparent border-[1.5px] rounded-xl focus:outline-none transition-all resize-none text-[#652b32] placeholder:text-[#652b32]/50 font-medium text-lg md:text-base ${errors.message ? "border-red-500" : "border-[#652b32]/20 focus:border-[#652b32]"
                                         }`}
                                     placeholder="Tell us about your project..."
                                 />
@@ -790,7 +790,7 @@ export const Contact = () => {
                                         {errors.message}
                                     </p>
                                 )}
-                                <div className="mt-1 text-xs text-foreground/40">
+                                <div className="mt-1 text-xs text-[#652b32]/40">
                                     {formData.message ? `${formData.message.length} characters` : "Minimum 10 characters required"}
                                 </div>
                             </div>
@@ -800,7 +800,7 @@ export const Contact = () => {
                                 ref={sendBtnRef}
                                 type="submit"
                                 disabled={isSending}
-                                className="contact-item group w-full py-3 px-6 bg-foreground text-background rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-strong transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed overflow-hidden relative text-sm uppercase tracking-wider"
+                                className="contact-item group w-full py-3 px-6 bg-[#652b32] text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-strong transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed overflow-hidden relative text-sm uppercase tracking-wider"
                             >
                                 <span className="btn-text">{isSending ? "Sending..." : "Send Message"}</span>
                                 <Send className="send-icon w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -816,8 +816,8 @@ export const Contact = () => {
                                 onClick={() => setLocationType("corporate")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition
                 ${locationType === "corporate"
-                                        ? "bg-foreground text-background"
-                                        : "border border-foreground/30 text-foreground/60 hover:text-foreground"}
+                                        ? "bg-[#652b32] text-white"
+                                        : "border border-[#652b32]/30 text-[#652b32]/60 hover:text-[#652b32]"}
               `}
                             >
                                 Corporate
@@ -828,8 +828,8 @@ export const Contact = () => {
                                 onClick={() => setLocationType("branch")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition
                 ${locationType === "branch"
-                                        ? "bg-foreground text-background"
-                                        : "border border-foreground/30 text-foreground/60 hover:text-foreground"}
+                                        ? "bg-[#652b32] text-white"
+                                        : "border border-[#652b32]/30 text-[#652b32]/60 hover:text-[#652b32]"}
               `}
                             >
                                 Branch
@@ -841,13 +841,13 @@ export const Contact = () => {
                                 <>
                                     {/* CORPORATE DETAILS */}
                                     <a href="mailto:support@mediamaticstudio.com" className="block">
-                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4 hover:border-foreground/25 transition group">
-                                            <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center">
-                                                <Mail className="w-5 h-5" strokeWidth={1.5} />
+                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4 hover:border-[#652b32]/25 transition group">
+                                            <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center">
+                                                <Mail className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm uppercase tracking-wider">Email Us</h3>
-                                                <span className="text-foreground/50 text-sm flex items-center gap-1">
+                                                <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Email Us</h3>
+                                                <span className="text-[#652b32]/50 text-sm flex items-center gap-1">
                                                     support@mediamaticstudio.com <ArrowUpRight className="w-3 h-3" />
                                                 </span>
                                             </div>
@@ -855,16 +855,16 @@ export const Contact = () => {
                                     </a>
 
                                     <a href={`tel:919629593615`}>
-                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4 hover:border-foreground/25 transition group">
-                                            <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center">
-                                                <Phone className="w-5 h-5" strokeWidth={1.5} />
+                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4 hover:border-[#652b32]/25 transition group">
+                                            <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center">
+                                                <Phone className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm uppercase tracking-wider">Call Us</h3>
-                                                <p className="text-foreground/50 text-sm">
+                                                <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Call Us</h3>
+                                                <p className="text-[#652b32]/50 text-sm">
                                                     +91  96295 93615
                                                 </p>
-                                                <p className="text-foreground/35 text-xs">US Toll Free: (+1) 888 219 5755</p>
+                                                <p className="text-[#652b32]/35 text-xs">US Toll Free: (+1) 888 219 5755</p>
                                             </div>
                                         </div>
                                     </a>
@@ -874,13 +874,13 @@ export const Contact = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4 hover:border-foreground/25 transition group">
-                                            <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center">
-                                                <MapPin className="w-5 h-5" strokeWidth={1.5} />
+                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4 hover:border-[#652b32]/25 transition group">
+                                            <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center">
+                                                <MapPin className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm uppercase tracking-wider">Visit Us</h3>
-                                                <p className="text-foreground/50 text-xs">
+                                                <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Visit Us</h3>
+                                                <p className="text-[#652b32]/50 text-xs">
                                                     COVAI TECH PARK, Site No: 90,<br />
                                                     Kovai Thiru Nagar, Kalapatty Village,<br />
                                                     Coimbatore – 641 014
@@ -893,13 +893,13 @@ export const Contact = () => {
                                 <>
                                     {/* BRANCH DETAILS */}
                                     <a href="mailto:branch@mediamaticstudio.com">
-                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4 hover:border-foreground/25 transition group">
-                                            <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center">
-                                                <Mail className="w-5 h-5" strokeWidth={1.5} />
+                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4 hover:border-[#652b32]/25 transition group">
+                                            <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center">
+                                                <Mail className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm uppercase tracking-wider">Email Us</h3>
-                                                <span className="text-foreground/50 text-sm flex items-center gap-1">
+                                                <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Email Us</h3>
+                                                <span className="text-[#652b32]/50 text-sm flex items-center gap-1">
                                                     support@mediamaticstudio.com <ArrowUpRight className="w-3 h-3" />
                                                 </span>
                                             </div>
@@ -907,14 +907,14 @@ export const Contact = () => {
                                     </a>
 
                                     <a href="tel:+919600506094">
-                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4 hover:border-foreground/25 transition group">
-                                            <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center">
-                                                <Phone className="w-5 h-5" strokeWidth={1.5} />
+                                        <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4 hover:border-[#652b32]/25 transition group">
+                                            <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center">
+                                                <Phone className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-sm uppercase tracking-wider">Call Us</h3>
-                                                <p className="text-foreground/50 text-sm">+91 9600506094</p>
-                                                <p className="text-foreground/50 text-sm">0422-4772362</p>
+                                                <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Call Us</h3>
+                                                <p className="text-[#652b32]/50 text-sm">+91 9600506094</p>
+                                                <p className="text-[#652b32]/50 text-sm">0422-4772362</p>
                                             </div>
                                         </div>
                                     </a>
@@ -925,13 +925,13 @@ export const Contact = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4">
-                                                <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center shrink-0">
-                                                    <MapPin className="w-5 h-5" strokeWidth={1.5} />
+                                            <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4">
+                                                <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center shrink-0">
+                                                    <MapPin className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                                 </div>
                                                 <div>
-                                                    <h3 className="font-bold text-sm uppercase tracking-wider">Coimbatore Branch</h3>
-                                                    <p className="text-foreground/50 text-xs mt-2 leading-relaxed">
+                                                    <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Coimbatore Branch</h3>
+                                                    <p className="text-[#652b32]/50 text-xs mt-2 leading-relaxed">
                                                         Civil Aerodrome Post, No. 97,<br />
                                                         Dr. Jaganathanagar,<br />
                                                         Coimbatore – 641 014
@@ -945,13 +945,13 @@ export const Contact = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-foreground/10 flex gap-4">
-                                                <div className="w-12 h-12 rounded-xl border-2 border-foreground/15 flex items-center justify-center shrink-0">
-                                                    <MapPin className="w-5 h-5" strokeWidth={1.5} />
+                                            <div className="info-card p-5 md:p-6 rounded-2xl border-2 border-[#652b32]/10 flex gap-4">
+                                                <div className="w-12 h-12 rounded-xl border-2 border-[#652b32]/15 flex items-center justify-center shrink-0">
+                                                    <MapPin className="w-5 h-5 text-[#652b32]" strokeWidth={1.5} />
                                                 </div>
                                                 <div>
-                                                    <h3 className="font-bold text-sm uppercase tracking-wider">Bengaluru Branch</h3>
-                                                    <p className="text-foreground/50 text-xs mt-2 leading-relaxed">
+                                                    <h3 className="font-bold text-sm uppercase tracking-wider text-[#652b32]">Bengaluru Branch</h3>
+                                                    <p className="text-[#652b32]/50 text-xs mt-2 leading-relaxed">
                                                         MediaMatic Studio Pvt Ltd,<br />
                                                         2nd Floor, No. 46, 29th Cross,<br />
                                                         Ejipura Main Road, Koramangala,<br />

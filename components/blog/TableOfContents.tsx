@@ -112,8 +112,8 @@ const TableOfContents = () => {
                             <Image src={listIcon} alt="list" width={20} height={20} className="brightness-0 invert" />
                         </div>
                         <div>
-                            <h3 className="text-lg font-black text-gray-900">Table of Contents</h3>
-                            <p className="text-xs text-gray-500">{headings.length} sections</p>
+                            <h3 className="text-lg font-black text-[#652b32]">Table of Contents</h3>
+                            <p className="text-xs text-[#652b32]/60">{headings.length} sections</p>
                         </div>
                     </div>
                     <button
@@ -121,7 +121,7 @@ const TableOfContents = () => {
                         className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-all hover:scale-105"
                         aria-label={isCollapsed ? "Expand" : "Collapse"}
                     >
-                        <ChevronRight className={`w-4 h-4 text-gray-600 transition-transform duration-300 ${isCollapsed ? '' : 'rotate-180'}`} />
+                        <ChevronRight className={`w-4 h-4 text-[#652b32] transition-transform duration-300 ${isCollapsed ? '' : 'rotate-180'}`} />
                     </button>
                 </div>
 

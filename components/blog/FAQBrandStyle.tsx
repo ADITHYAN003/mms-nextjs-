@@ -45,7 +45,7 @@ const FAQBrandStyle = ({ faqs, title = "Frequently Asked Questions" }: FAQBrandS
                                 className="w-full flex items-center justify-between text-left gap-6 py-3 md:py-4 focus:outline-none group"
                                 aria-expanded={isOpen}
                             >
-                                <span className={`text-lg md:text-xl font-medium tracking-tight transition-colors duration-300 ${isOpen ? "text-[#652b32]" : "text-gray-900 group-hover:text-[#652b32]"}`}>
+                                <span className={`text-lg md:text-xl font-medium tracking-tight transition-colors duration-300 ${isOpen ? "text-[#652b32]" : "text-[#652b32] group-hover:text-[#652b32]"}`}>
                                     {faq.question}
                                 </span>
 

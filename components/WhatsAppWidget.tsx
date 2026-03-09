@@ -127,7 +127,7 @@ export const WhatsAppWidget = () => {
                                 >
                                     <div
                                         className={`max-w-[85%] p-3.5 rounded-2xl text-[13px] leading-relaxed whitespace-pre-wrap shadow-sm transition-all ${msg.sender === 'bot'
-                                            ? 'bg-white text-slate-700 rounded-tl-none border border-gray-100'
+                                            ? 'bg-white text-[#652b32] rounded-tl-none border border-gray-100'
                                             : 'bg-[#652b32] text-white rounded-tr-none shadow-[#652b32]/20'
                                             }`}
                                     >

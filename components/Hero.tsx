@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import { ArrowDown, Video, Radio, Globe, Code, Palette, Settings } from "lucide-react";
 
 if (typeof window !== "undefined") {
@@ -285,15 +286,15 @@ export const Hero = () => {
             <div className="container mx-auto px-6 text-center relative z-10">
                 {/* Top Icons */}
                 <div ref={iconsTopRef} className="flex justify-center gap-6 md:gap-12 mb-8 md:mb-12">
-                    <Video className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
-                    <Radio className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
-                    <Palette className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
+                    <Video className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
+                    <Radio className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
+                    <Palette className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
                 </div>
 
                 {/* Title with bold modern typography */}
                 <h1
                     ref={titleRef}
-                    className="font-display text-[clamp(2.2rem,10vw,8rem)] leading-[1] md:leading-[0.9] tracking-tight text-foreground font-bold will-change-transform transform-gpu"
+                    className="font-display text-[clamp(2.2rem,10vw,8rem)] leading-[1] md:leading-[0.9] tracking-tight text-[#652b32] font-bold will-change-transform transform-gpu"
                 >
                     <span className="hero-line block will-change-transform">
                         <span className="inline-block relative">
@@ -309,12 +310,12 @@ export const Hero = () => {
                                         backfaceVisibility: 'hidden',
                                     }}
                                 >
-                                    <img
+                                    <Image
                                         src="/assets/letter-i.gif"
-                                        alt="Animated I"
-                                        loading="eager"
-                                        fetchPriority="high"
-                                        decoding="async"
+                                        alt="MediaMatic Letter I Animation"
+                                        width={100}
+                                        height={100}
+                                        priority
                                         className="w-full h-full object-contain max-w-none"
                                     />
                                 </div>
@@ -336,12 +337,12 @@ export const Hero = () => {
                                         backfaceVisibility: 'hidden',
                                     }}
                                 >
-                                    <img
+                                    <Image
                                         src="/assets/letter-o.gif"
-                                        alt="Animated O"
-                                        loading="eager"
-                                        fetchPriority="high"
-                                        decoding="async"
+                                        alt="MediaMatic Letter O Animation"
+                                        width={100}
+                                        height={100}
+                                        priority
                                         className="w-full h-full object-contain max-w-none"
                                     />
                                 </div>
@@ -353,16 +354,16 @@ export const Hero = () => {
                 {/* Subtitle */}
                 <p
                     ref={subtitleRef}
-                    className="mt-8 text-lg md:text-xl text-foreground/70 max-w-xl mx-auto font-body will-change-transform"
+                    className="mt-8 text-lg md:text-xl text-[#652b32]/70 max-w-xl mx-auto font-body will-change-transform"
                 >
                     Crafting digital experiences that resonate. <br className="hidden md:block" />
-                    <span className="text-foreground font-semibold block md:inline mt-2 md:mt-0">Branding • Design • Strategy</span>
+                    <span className="text-[#652b32] font-semibold block md:inline mt-2 md:mt-0">Branding • Design • Strategy</span>
                 </p>
 
                 <div ref={iconsBottomRef} className="flex justify-center gap-6 md:gap-12 mt-8 md:mt-12">
-                    <Globe className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
-                    <Code className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
-                    <Settings className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-foreground/60 will-change-transform" />
+                    <Globe className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
+                    <Code className="hero-icon float-up w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
+                    <Settings className="hero-icon float-down w-8 h-8 md:w-12 md:h-12 text-[#652b32]/60 will-change-transform" />
                 </div>
             </div>
         </section>

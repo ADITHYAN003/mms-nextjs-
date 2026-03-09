@@ -19,6 +19,10 @@ module.exports = {
                 primary: { DEFAULT: "#652b32", foreground: "#faf3e0" },
                 secondary: { DEFAULT: "#fdf3b7", foreground: "#652b32" },
             },
+            fontFamily: {
+                display: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+                body: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+            },
         },
     },
     plugins: [require("tailwindcss-animate")],

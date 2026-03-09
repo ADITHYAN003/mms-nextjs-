@@ -183,7 +183,7 @@ export function AnimationClient() {
                                             <th className="py-10 px-12 text-left font-black uppercase tracking-[0.2em] text-xs">3D Animation</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-100">
+                                    <tbody className="divide-y divide-[#652b32]/10">
                                         {comparisonData.map((row, i) => (
                                             <tr key={i} className="hover:bg-[#faf3e0]/50 transition-colors group">
                                                 <td className="py-8 px-12 font-black text-[#652b32] uppercase tracking-tighter text-sm">{row.feature}</td>

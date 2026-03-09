@@ -196,7 +196,7 @@ const Animation = () => {
                                                 <th className="py-6 px-8 text-left font-bold uppercase tracking-wider text-xs">3D Animation</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-gray-100">
+                                        <tbody className="divide-y divide-[#652b32]/10">
                                             {comparisonData.map((row, i) => (
                                                 <tr key={i} className="hover:bg-[#652b32]/[0.02] transition-colors group">
                                                     <td className="py-5 px-8 font-bold text-[#652b32] text-sm">{row.feature}</td>

@@ -2,12 +2,17 @@ import { Metadata } from "next";
 import { SEOServicesClient } from "@/components/SEOServicesClient";
 
 export const metadata: Metadata = {
-    title: "Best SEO Services Company | Search Engine Optimization | MediaMatic Studio",
-    description: "Transform your online presence with the best SEO services company. We offer local, national, and global SEO strategies to drive higher rankings and quality leads.",
+    title: "Best SEO Services Company in Coimbatore | Experts & Audits",
+    description: "Transform your online presence with the best SEO services company in Coimbatore. We offer bespoke SEO strategies to drive higher rankings and quality lead generation.",
     alternates: {
         canonical: "/search-engine-optimization-company/",
     },
-    keywords: ["SEO services", "search engine optimization", "local SEO", "ecommerce SEO", "WordPress SEO", "SEO audit", "MediaMatic Studio"],
+    keywords: ["SEO services Coimbatore", "search engine optimization", "local SEO", "ecommerce SEO", "WordPress SEO", "SEO audit", "MediaMatic Studio"],
+    openGraph: {
+        title: "SEO Services Company Coimbatore | Search Engine Optimization",
+        description: "Rank #1 on Google with MediaMatic Studio's expert SEO strategies. Local, national, and global SEO solutions.",
+        url: "https://mediamaticstudio.com/search-engine-optimization-company",
+    },
 };
 
 export default function SEOServicesPage() {

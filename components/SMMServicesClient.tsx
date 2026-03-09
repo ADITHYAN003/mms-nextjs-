@@ -163,16 +163,17 @@ const ExpectationsSection = () => (
     <section className="py-16 md:py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
             <motion.div
-                className="text-center mb-16"
+                className="text-center mb-20"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display text-center uppercase">
-                    What to Expect from Our <span className="text-[#FACC15]">SMM Services</span>
+                <h2 className="text-4xl md:text-6xl font-black text-[#652b32] mb-8 font-heading leading-tight tracking-tight uppercase">
+                    What to Expect from <br className="hidden md:block" />
+                    Our <span className="text-[#FACC15]">SMM Services</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center">
+                <p className="text-base md:text-lg text-[#652b32]/60 max-w-4xl mx-auto leading-relaxed font-medium">
                     As a digital social media marketing agency, we strategize, tell creative stories, and use data to make every campaign successful.
                 </p>
             </motion.div>
@@ -188,20 +189,20 @@ const ExpectationsSection = () => (
                 ].map((s, i) => (
                     <motion.div
                         key={s.title}
-                        className="p-8 rounded-2xl bg-[#faf3e0] border border-border hover:shadow-xl hover:bg-[#652b32] transition-all duration-300 group cursor-pointer"
+                        className="p-10 rounded-[3rem] bg-[#fff8eb] border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
                         custom={i}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={cardVariants}
                     >
-                        <div className="w-14 h-14 rounded-xl bg-[#652b32]/5 flex items-center justify-center mb-5 group-hover:bg-[#faf3e0]/10 transition-colors">
+                        <div className="w-16 h-16 rounded-2xl bg-[#652b32]/5 flex items-center justify-center mb-8 group-hover:bg-[#faf3e0]/10 transition-colors">
                             <s.icon size={28} className="text-[#FACC15] group-hover:text-[#faf3e0]" />
                         </div>
-                        <h3 className="text-xl font-bold text-[#652b32] mb-3 font-display group-hover:text-[#faf3e0] uppercase">
+                        <h3 className="text-2xl font-black text-[#652b32] mb-4 font-heading group-hover:text-white leading-tight uppercase tracking-tight">
                             {s.title}
                         </h3>
-                        <p className="text-[#652b32]/80 leading-relaxed text-sm group-hover:text-[#faf3e0]/90">
+                        <p className="text-[#652b32]/60 leading-relaxed text-sm group-hover:text-white/80 font-medium">
                             {s.desc}
                         </p>
                     </motion.div>
@@ -222,10 +223,10 @@ const WhyChooseSection = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 font-display text-center uppercase">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#652b32] mb-6 font-display text-center uppercase">
                     Why Choose Our <span className="text-[#FACC15]">SMM Agency</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center">
+                <p className="text-lg text-[#652b32]/70 max-w-3xl mx-auto text-center">
                     We do not use generic templates, but rather we will create custom campaigns that will be in line with your particular goals.
                 </p>
             </motion.div>
@@ -257,10 +258,10 @@ const PlatformsSection = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 font-display text-center uppercase">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#652b32] mb-6 font-display text-center uppercase">
                     Platforms We <span className="text-[#FACC15]">Expertise!</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center">
+                <p className="text-lg text-[#652b32]/70 max-w-3xl mx-auto text-center">
                     We are committed to providing services that are specialized to the best companies where we can access and achieve maximum engagement.
                 </p>
             </motion.div>
@@ -356,10 +357,10 @@ const ProcessSection = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 font-display text-center uppercase">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#652b32] mb-4 font-display text-center uppercase">
                     Our Results Driven <span className="text-[#FACC15]">SMM Process</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mx-auto max-w-2xl text-center">
+                <p className="text-lg text-[#652b32]/70 mx-auto max-w-2xl text-center">
                     systematic approach since the beginning of research, implementation, or result reporting.
                 </p>
             </motion.div>
@@ -373,7 +374,7 @@ const ProcessSection = () => (
                 ].map((p, i) => (
                     <motion.div
                         key={p.title}
-                        className="p-8 rounded-2xl bg-[#faf3e0] border border-border hover:shadow-xl hover:bg-[#652b32] transition-all duration-300 group"
+                        className="p-8 rounded-2xl bg-[#faf3e0] border border-[#652b32]/10 hover:shadow-xl hover:bg-[#652b32] transition-all duration-300 group"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -402,10 +403,10 @@ const IndustriesSection = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 font-display text-center uppercase">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#652b32] mb-4 font-display text-center uppercase">
                     Industries We <span className="text-[#FACC15]">Serve</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mx-auto max-w-2xl text-center">
+                <p className="text-lg text-[#652b32]/70 mx-auto max-w-2xl text-center">
                     Our best SMM services online are expected to serve different industries with tailor-made strategies.
                 </p>
             </motion.div>
@@ -427,7 +428,7 @@ const IndustriesSection = () => (
                 ].map((ind, i) => (
                     <motion.div
                         key={ind.title}
-                        className="flex items-start gap-4 p-5 rounded-xl bg-background border border-border hover:shadow-md hover:bg-[#652b32] transition-all duration-300 group"
+                        className="flex items-start gap-4 p-5 rounded-xl bg-[#fff8eb] border border-[#652b32]/10 hover:shadow-md hover:bg-[#652b32] hover:text-[#faf3e0] transition-all duration-300 group"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -440,7 +441,7 @@ const IndustriesSection = () => (
                             <h3 className="font-bold text-[#652b32] group-hover:text-[#faf3e0] mb-1 font-display uppercase">
                                 {ind.title}
                             </h3>
-                            <p className="text-muted-foreground group-hover:text-[#faf3e0]/70 text-[10px] leading-relaxed">{ind.desc}</p>
+                            <p className="text-[#652b32]/70 group-hover:text-[#faf3e0]/70 text-[10px] leading-relaxed">{ind.desc}</p>
                         </div>
                     </motion.div>
                 ))}
@@ -493,7 +494,7 @@ const FAQSection = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display text-center uppercase">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#652b32] mb-4 font-display text-center uppercase">
                     Frequently Asked <span className="text-[#FACC15]">Questions</span>
                 </h2>
             </motion.div>
@@ -515,12 +516,12 @@ const FAQSection = () => (
                         <AccordionItem
                             key={i}
                             value={`faq-${i}`}
-                            className="border border-border rounded-xl px-6 bg-card data-[state=open]:shadow-md transition-shadow"
+                            className="border border-[#652b32]/10 rounded-xl px-6 bg-[#fff8eb] data-[state=open]:shadow-md transition-shadow"
                         >
-                            <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-5 font-display">
+                            <AccordionTrigger className="text-left font-semibold text-[#652b32] hover:no-underline py-5 font-display">
                                 {faq.q}
                             </AccordionTrigger>
-                            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                            <AccordionContent className="text-[#652b32]/70 leading-relaxed pb-5">
                                 {faq.a}
                             </AccordionContent>
                         </AccordionItem>

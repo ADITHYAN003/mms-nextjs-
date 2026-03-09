@@ -207,7 +207,7 @@ export const Header = () => {
                 ref={headerRef}
                 className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 will-change-transform
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
-        ${isScrolled ? "bg-background shadow-lg" : "bg-transparent"}`}
+        ${isScrolled ? "bg-[#fff8eb] shadow-lg" : "bg-transparent"}`}
             >
                 <div className="container mx-auto px-6">
                     <nav className="flex items-center justify-between h-20">
@@ -262,7 +262,7 @@ export const Header = () => {
                                         </a>
 
                                         {link.id === "services" && serviceOpen && (
-                                            <div className="absolute top-full mt-3 bg-background shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-foreground/5">
+                                            <div className="absolute top-full mt-3 bg-[#fff8eb] shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-[#652b32]/10">
                                                 {serviceLinks.map((s) => (
                                                     <a
                                                         key={s.label}
@@ -272,7 +272,7 @@ export const Header = () => {
                                                             setServiceOpen(false);
                                                             handleNavClick(s.href, true);
                                                         }}
-                                                        className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-foreground/70 font-medium"
+                                                        className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-[#652b32]/70 font-medium"
                                                     >
                                                         {s.label}
                                                     </a>
@@ -281,7 +281,7 @@ export const Header = () => {
                                         )}
 
                                         {link.id === "digital-marketing" && digitalMarketingOpen && (
-                                            <div className="absolute top-full mt-3 bg-background shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-foreground/5">
+                                            <div className="absolute top-full mt-3 bg-[#fff8eb] shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-[#652b32]/10">
                                                 {digitalMarketingLinks.map((s) => (
                                                     <a
                                                         key={s.label}
@@ -291,7 +291,7 @@ export const Header = () => {
                                                             setDigitalMarketingOpen(false);
                                                             handleNavClick(s.href, true);
                                                         }}
-                                                        className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-foreground/70 font-medium"
+                                                        className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-[#652b32]/70 font-medium"
                                                     >
                                                         {s.label}
                                                     </a>
@@ -300,7 +300,7 @@ export const Header = () => {
                                         )}
 
                                         {link.id === "studio" && studioOpen && (
-                                            <div className="absolute top-full mt-3 bg-background shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-foreground/5">
+                                            <div className="absolute top-full mt-3 bg-[#fff8eb] shadow-xl rounded-xl w-72 overflow-hidden z-10 border border-[#652b32]/10">
                                                 <a
                                                     href="/podcast-recording-studio-in-Coimbatore/"
                                                     onClick={(e) => {
@@ -308,7 +308,7 @@ export const Header = () => {
                                                         setStudioOpen(false);
                                                         handleNavClick("/podcast-recording-studio-in-Coimbatore/", true);
                                                     }}
-                                                    className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-foreground/70 font-medium"
+                                                    className="block px-5 py-3 text-sm transition-all duration-300 hover:bg-[#652b32] hover:text-[#faf3e0] text-[#652b32]/70 font-medium"
                                                 >
                                                     Coimbatore Branch
                                                 </a>

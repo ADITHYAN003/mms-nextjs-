@@ -52,7 +52,7 @@ const BlogSidebar = ({
                 <div className={variant === 'card' ? styles.sidebarCard : ""}>
                     <h3 className="text-xl font-bold mb-6 text-[#652b32]">Recent Posts</h3>
                     {loading ? (
-                        <div className="text-center py-4 text-gray-500">Loading...</div>
+                        <div className="text-center py-4 text-[#652b32]/60">Loading...</div>
                     ) : (
                         <div className="space-y-4">
                             {recentPosts.map((post: any) => (
@@ -71,10 +71,10 @@ const BlogSidebar = ({
                                         />
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h4 className="font-bold text-sm text-gray-900 line-clamp-2 group-hover:text-[#652b32] transition-colors">
+                                        <h4 className="font-bold text-sm text-[#652b32] line-clamp-2 transition-colors">
                                             {post.title}
                                         </h4>
-                                        <div className="flex items-center gap-2 mt-2 text-xs text-gray-500">
+                                        <div className="flex items-center gap-2 mt-2 text-xs text-[#652b32]/60">
                                             <Calendar className="w-3 h-3" />
                                             <span>{post.publish_date}</span>
                                         </div>

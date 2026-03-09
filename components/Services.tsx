@@ -44,7 +44,7 @@ const services = [
         tagline: "Your go-to digital partner.",
         description: " Websites that don't just look good but bring in customers. Mobile apps your customers can't stop using.Clean, responsive design.",
         features: ["Mobile Apps", "Websites", "E-Commerce", "Custom Solutions"],
-        href: "/services/web-development/",
+        href: "/services/website-development-agency/",
     },
     {
         icon: Palette,
@@ -138,29 +138,29 @@ export const Services = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-12 md:mb-20">
-                    <span className="block text-base font-semibold tracking-wider text-foreground/40 mb-4 uppercase">
+                <div className="text-center mb-20">
+                    <span className="block text-base font-black tracking-[0.25em] text-[#652b32]/40 mb-6 uppercase">
                         What We Do
                     </span>
-                    <h2 className="services-heading font-display text-[clamp(3rem,10vw,7.5rem)] leading-[0.85] font-black text-foreground text-balance px-4 flex flex-col md:flex-row items-center md:items-baseline justify-center md:gap-6">
-                        <span className="text-inherit uppercase">Our</span>
-                        <span className="italic font-normal text-foreground/60 text-[0.35em] md:text-[0.3em] tracking-tight">Services</span>
+                    <h2 className="services-heading font-heading text-5xl md:text-8xl font-black text-[#652b32] text-balance mb-8 tracking-tighter uppercase leading-[0.9]">
+                        Our  <br />
+                        <span className="text-[#FACC15]">Services</span>
                     </h2>
-                    <p className="text-base text-foreground/50 max-w-xl mx-auto mt-4 md:mt-6 leading-relaxed px-6">
-                        A complete creative powerhouse for all your branding and digital needs
+                    <p className="text-lg text-[#652b32]/60 max-w-2xl mx-auto leading-relaxed font-medium">
+                        A complete creative powerhouse for all your branding and digital needs. We turn complex challenges into simple, elegant digital solutions.
                     </p>
                 </div>
 
-                {/* Services Grid */}
-                <div className="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 max-w-7xl mx-auto px-2">
+                <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="service-card group relative bg-card rounded-2xl border-2 border-border hover:border-foreground/20 shadow-soft transition-all duration-300 overflow-hidden"
+                            onClick={() => router.push(service.href)}
+                            className="service-card group relative p-12 rounded-[3.5rem] bg-[#fff8eb] border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 overflow-hidden cursor-pointer"
                         >
                             {/* Service Background Image - Bottom Right */}
                             <div
-                                className="absolute bottom-0 right-0 w-24 h-24 md:w-32 md:h-32 opacity-[0.08] pointer-events-none transition-all duration-500 group-hover:opacity-[0.12] group-hover:scale-110"
+                                className="absolute bottom-0 right-0 w-32 h-32 opacity-5 pointer-events-none transition-all duration-500 group-hover:opacity-10 group-hover:scale-110"
                                 style={{
                                     backgroundImage: `url(${service.bgImage})`,
                                     backgroundSize: 'contain',
@@ -168,40 +168,40 @@ export const Services = () => {
                                     backgroundPosition: 'bottom right',
                                 }}
                             />
-                            {/* Card Header */}
-                            <div className="p-6 md:p-8">
+
+                            <div className="relative z-10">
                                 {/* Index */}
-                                <span className="absolute top-4 right-4 text-5xl font-display font-bold text-foreground/[0.03] large-number">
+                                <span className="absolute top-0 right-0 text-6xl font-black text-[#652b32]/5 group-hover:text-white/5 transition-colors">
                                     {String(index + 1).padStart(2, "0")}
                                 </span>
 
                                 {/* Icon */}
-                                <div className="w-14 h-14 mb-5 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
+                                <div className="w-16 h-16 mb-10 rounded-2xl bg-[#652b32]/5 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300">
                                     <service.icon
-                                        className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors"
+                                        className="w-7 h-7 text-[#652b32] group-hover:text-[#FACC15] transition-colors"
                                         strokeWidth={1.5}
                                     />
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-lg font-bold text-foreground mb-1">
+                                <h3 className="text-2xl font-black text-[#652b32] mb-3 group-hover:text-white transition-colors font-heading leading-tight uppercase tracking-tight">
                                     {service.title}
                                 </h3>
-                                <p className="text-xs text-foreground/50 italic mb-4">
+                                <p className="text-xs text-[#652b32]/40 italic mb-6 group-hover:text-white/40 transition-colors uppercase font-bold tracking-widest">
                                     {service.tagline}
                                 </p>
 
                                 {/* Description */}
-                                <p className="text-sm text-foreground/70 leading-relaxed mb-5">
+                                <p className="text-[#652b32]/60 text-sm leading-relaxed mb-8 group-hover:text-white/70 transition-colors font-medium">
                                     {service.description}
                                 </p>
 
                                 {/* Features */}
-                                <div className="flex flex-wrap gap-2 mb-6">
+                                <div className="flex flex-wrap gap-2 mb-10">
                                     {service.features.map((feature, i) => (
                                         <span
                                             key={i}
-                                            className="text-[10px] uppercase tracking-wider px-3 py-1.5 bg-foreground/5 rounded-full text-foreground/60 font-medium"
+                                            className="text-[10px] uppercase tracking-widest px-3 py-1.5 bg-[#652b32]/5 rounded-full text-[#652b32]/60 font-black group-hover:bg-white/10 group-hover:text-white/80 transition-all"
                                         >
                                             {feature}
                                         </span>
@@ -209,13 +209,12 @@ export const Services = () => {
                                 </div>
 
                                 {/* CTA */}
-                                <button
-                                    onClick={() => router.push(service.href)}
-                                    className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors group/btn z-10 relative cursor-pointer"
+                                <div
+                                    className="flex items-center gap-3 text-xs font-black text-[#652b32]/40 group-hover:text-[#FACC15] transition-all uppercase tracking-[0.2em]"
                                 >
-                                    Learn More
-                                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                                </button>
+                                    Explore Service
+                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                </div>
                             </div>
                         </div>
                     ))}

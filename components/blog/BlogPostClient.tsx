@@ -217,10 +217,10 @@ export default function BlogPostClient({ post, recentPosts }: { post: any, recen
                             className="bg-white rounded-[1.5rem] md:rounded-3xl p-5 sm:p-8 md:p-12 shadow-2xl shadow-[#652b32]/5 mb-12"
                         >
                             <nav className="flex items-center flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-6 lg:mb-8">
-                                <Link href="/" className="text-[10px] md:text-xs font-bold text-gray-400 hover:text-[#652b32] transition-colors uppercase tracking-wider">Home</Link>
-                                <ChevronRight className="w-2.5 h-2.5 md:w-3 md:h-3 text-gray-300" />
-                                <Link href="/blog" className="text-[10px] md:text-xs font-bold text-gray-400 hover:text-[#652b32] transition-colors uppercase tracking-wider">Blog</Link>
-                                <ChevronRight className="w-2.5 h-2.5 md:w-3 md:h-3 text-gray-300" />
+                                <Link href="/" className="text-[10px] md:text-xs font-bold text-[#652b32]/50 hover:text-[#652b32] transition-colors uppercase tracking-wider">Home</Link>
+                                <ChevronRight className="w-2.5 h-2.5 md:w-3 md:h-3 text-[#652b32]/30" />
+                                <Link href="/blog" className="text-[10px] md:text-xs font-bold text-[#652b32]/50 hover:text-[#652b32] transition-colors uppercase tracking-wider">Blog</Link>
+                                <ChevronRight className="w-2.5 h-2.5 md:w-3 md:h-3 text-[#652b32]/30" />
                                 <span className="text-[10px] md:text-xs font-bold text-[#652b32] uppercase tracking-wider truncate max-w-[100px] md:max-w-none">{post.category}</span>
                             </nav>
 
@@ -233,8 +233,8 @@ export default function BlogPostClient({ post, recentPosts }: { post: any, recen
                                     <Image src={logoBlog} alt={post.author.name} fill className="object-cover" />
                                 </div>
                                 <div>
-                                    <div className="text-lg font-black text-gray-900">By {post.author.name}</div>
-                                    <div className="flex items-center gap-4 text-xs font-bold text-gray-400 uppercase tracking-wider mt-1">
+                                    <div className="text-lg font-black text-[#652b32]">By {post.author.name}</div>
+                                    <div className="flex items-center gap-4 text-xs font-bold text-[#652b32]/50 uppercase tracking-wider mt-1">
                                         <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> {post.publish_date}</span>
                                         <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {post.read_time}</span>
                                     </div>

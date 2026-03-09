@@ -140,10 +140,10 @@ const IntroSection = () => (
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-display">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#652b32] mb-6 font-display">
                         What is SMO in Digital Marketing and <span className="text-[#FACC15]">Why It Matters</span> for Businesses
                     </h2>
-                    <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <div className="space-y-4 text-[#652b32]/70 leading-relaxed">
                         <p>
                             Social media marketing is the systematic process of making social media visible, credible, and interactive. Unlike paid advertisement, it focuses on performance which is organic based on systematic planning of the content and profile development.
                         </p>
@@ -236,21 +236,22 @@ const ServicesSection = () => (
     <section className="py-16 md:py-24 px-4 bg-secondary/50 font-body">
         <div className="container mx-auto max-w-6xl">
             <motion.div
-                className="text-center mb-16"
+                className="text-center mb-20"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display">
-                    Our Professional <span className="text-[#FACC15]">Social Media Optimization</span> Services
+                <h2 className="text-4xl md:text-6xl font-black text-[#652b32] mb-8 font-heading leading-tight tracking-tight uppercase">
+                    Our Professional <br className="hidden md:block" />
+                    <span className="text-[#FACC15]">Social Media Optimization</span> Services
                 </h2>
-                <div className="text-lg text-muted-foreground max-w-4xl mx-auto space-y-4">
+                <div className="text-base md:text-lg text-[#652b32]/60 max-w-4xl mx-auto space-y-4 font-medium">
                     <p>
                         We provide organized professional SMO services to suit business purposes at MediaMaticStudio. Our team will guarantee the improvement of profiles, engagement of the audience, and performance analysis to achieve stable growth.
                     </p>
                     <p>
-                        Being a trusted SMO services company, we integrate creativity and analytics to construct quantifiable outcomes. We have been ranked as one of the social media optimization companies, which values strategy, transparency and execution based on performance in an effort to promote sustainable growth in the digital space.
+                        Being a trusted SMO services company, we integrate creativity and analytics to construct quantifiable outcomes.
                     </p>
                 </div>
             </motion.div>
@@ -265,20 +266,20 @@ const ServicesSection = () => (
                 ].map((s, i) => (
                     <motion.div
                         key={s.title}
-                        className="p-8 rounded-2xl bg-[#faf3e0] border border-border hover:shadow-xl hover:bg-[#652b32] transition-all duration-300 group cursor-pointer"
+                        className="p-10 rounded-[3rem] bg-[#fff8eb] border border-[#652b32]/5 hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
                         custom={i}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={cardVariants}
                     >
-                        <div className="w-14 h-14 rounded-xl bg-[#652b32]/5 flex items-center justify-center mb-5 group-hover:bg-[#faf3e0]/10 transition-colors">
+                        <div className="w-16 h-16 rounded-2xl bg-[#652b32]/5 flex items-center justify-center mb-8 group-hover:bg-[#faf3e0]/10 transition-colors">
                             <s.icon size={28} className="text-[#FACC15] group-hover:text-[#faf3e0]" />
                         </div>
-                        <h3 className="text-xl font-bold text-[#652b32] mb-3 font-display group-hover:text-[#faf3e0]">
+                        <h3 className="text-2xl font-black text-[#652b32] mb-4 font-heading group-hover:text-white leading-tight uppercase tracking-tight">
                             {s.title}
                         </h3>
-                        <p className="text-[#652b32]/80 leading-relaxed text-sm group-hover:text-[#faf3e0]/90">
+                        <p className="text-[#652b32]/60 leading-relaxed text-sm group-hover:text-white/80 font-medium">
                             {s.desc}
                         </p>
                     </motion.div>
@@ -317,10 +318,10 @@ const BenefitsSection = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-display">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#652b32] mb-4 font-display">
                     Key <span className="text-[#FACC15]">Benefits</span> of Social Media Optimization (SMO) Services
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-4xl mx-auto text-center">
+                <p className="text-lg text-[#652b32]/70 max-w-4xl mx-auto text-center">
                     Strategic SMO promotes visibility, participation and brand authority besides maintaining measurable digital outcomes and increase.
                 </p>
             </motion.div>
@@ -396,10 +397,10 @@ const IndustriesSection = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#652b32] mb-4 font-display">
                     Industries We Serve with <span className="text-[#FACC15]">SMO</span> (Social Media Optimization) Services
                 </h2>
-                <div className="text-lg text-muted-foreground max-w-4xl mx-auto space-y-4 text-center">
+                <div className="text-lg text-[#652b32]/70 max-w-4xl mx-auto space-y-4 text-center">
                     <p>
                         Our SMO (Social media optimization) Services are aimed to assist various industries that want to have better engagement and visibility.
                     </p>
@@ -427,7 +428,7 @@ const IndustriesSection = () => (
                 ].map((ind, i) => (
                     <motion.div
                         key={ind.title}
-                        className="flex items-start gap-4 p-5 rounded-xl bg-background border border-border hover:shadow-md hover:bg-[#652b32] hover:text-[#faf3e0] hover:border-[#652b32] transition-all duration-300 group"
+                        className="flex items-start gap-4 p-5 rounded-xl bg-[#fff8eb] border border-[#652b32]/10 hover:shadow-md hover:bg-[#652b32] hover:text-[#faf3e0] hover:border-[#652b32] transition-all duration-300 group"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -437,10 +438,10 @@ const IndustriesSection = () => (
                             <ind.icon size={20} className="text-[#FACC15] group-hover:text-[#faf3e0]" />
                         </div>
                         <div className="flex-1">
-                            <h3 className="font-bold text-foreground group-hover:text-[#faf3e0] mb-1 font-display">
+                            <h3 className="font-bold text-[#652b32] group-hover:text-[#faf3e0] mb-1 font-display">
                                 {ind.title}
                             </h3>
-                            <p className="text-muted-foreground group-hover:text-[#faf3e0]/80 text-[10px] leading-relaxed">{ind.desc}</p>
+                            <p className="text-[#652b32]/70 group-hover:text-[#faf3e0]/80 text-[10px] leading-relaxed">{ind.desc}</p>
                         </div>
                     </motion.div>
                 ))}
@@ -499,7 +500,7 @@ const FAQSection = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 font-display">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#652b32] mb-4 font-display">
                     Frequently Asked <span className="text-[#FACC15]">Questions</span>
                 </h2>
             </motion.div>
@@ -522,12 +523,12 @@ const FAQSection = () => (
                         <AccordionItem
                             key={i}
                             value={`faq-${i}`}
-                            className="border border-border rounded-xl px-6 bg-card data-[state=open]:shadow-md transition-shadow"
+                            className="border border-[#652b32]/10 rounded-xl px-6 bg-[#fff8eb] data-[state=open]:shadow-md transition-shadow"
                         >
-                            <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline py-5">
+                            <AccordionTrigger className="text-left font-semibold text-[#652b32] hover:no-underline py-5">
                                 {faq.q}
                             </AccordionTrigger>
-                            <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                            <AccordionContent className="text-[#652b32]/70 leading-relaxed pb-5">
                                 {faq.a}
                             </AccordionContent>
                         </AccordionItem>

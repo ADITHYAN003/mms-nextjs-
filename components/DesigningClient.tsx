@@ -144,15 +144,15 @@ export function DesigningClient() {
                                         <div
                                             key={i}
                                             onClick={() => router.push(`/services/designing/${card.slug}/`)}
-                                            className="content-block p-10 rounded-[3rem] bg-[#faf3e0] border border-[#652b32]/5 shadow-sm hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+                                            className="content-block p-12 rounded-[3.5rem] bg-[#fff8eb] border border-[#652b32]/5 shadow-sm hover:shadow-2xl hover:bg-[#652b32] transition-all duration-500 group cursor-pointer"
                                         >
-                                            <div className="w-14 h-14 rounded-2xl bg-[#652b32]/5 flex items-center justify-center mb-8 group-hover:bg-[#652b32] transition-colors">
-                                                <card.icon className="w-7 h-7 text-[#652b32] group-hover:text-yellow-400 transition-colors" />
+                                            <div className="w-16 h-16 rounded-2xl bg-[#652b32]/5 flex items-center justify-center mb-10 group-hover:bg-[#faf3e0]/10 transition-colors">
+                                                <card.icon className="w-8 h-8 text-[#652b32] group-hover:text-[#faf3e0] transition-colors" />
                                             </div>
-                                            <h3 className="font-heading text-xl font-black text-[#652b32] mb-4 uppercase tracking-tight">{card.title}</h3>
-                                            <p className="text-[#652b32]/60 text-sm font-medium leading-relaxed">{card.desc}</p>
-                                            <div className="mt-8 flex items-center gap-2 text-[#652b32]/50 group-hover:text-[#652b32] font-black uppercase tracking-widest text-[10px] transition-colors">
-                                                Explore <ArrowRight className="w-3.5 h-3.5" />
+                                            <h3 className="font-heading text-2xl font-black text-[#652b32] mb-6 group-hover:text-white uppercase tracking-tight leading-tight">{card.title}</h3>
+                                            <p className="text-[#652b32]/60 text-base font-medium leading-relaxed group-hover:text-white/80">{card.desc}</p>
+                                            <div className="mt-8 flex items-center gap-2 text-[#652b32]/40 group-hover:text-yellow-400 font-black uppercase tracking-widest text-[10px] transition-colors">
+                                                Explore <ArrowRight className="w-4 h-4" />
                                             </div>
                                         </div>
                                     ))}

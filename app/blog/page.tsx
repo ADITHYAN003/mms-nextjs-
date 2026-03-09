@@ -4,10 +4,16 @@ import { Loader2 } from "lucide-react";
 import BlogListContent from "@/components/blog/BlogListContent";
 
 export const metadata: Metadata = {
-    title: "Latest Insights | Blog | MediaMatic Studio",
-    description: "Stay updated with the latest trends in digital marketing, web development, and creative design. Expert insights from MediaMatic Studio.",
+    title: "Digital Marketing Insights & Trends | MediaMatic Studio Blog",
+    description: "Stay ahead of the curve with expert insights on SEO, branding, web development, and social media. Your source for digital marketing knowledge in Coimbatore.",
     alternates: {
         canonical: "/blog/",
+    },
+    keywords: ["digital marketing blog", "SEO tips", "branding trends", "web development insights", "MediaMatic Studio blog"],
+    openGraph: {
+        title: "Digital Marketing Insights | MediaMatic Studio Blog",
+        description: "Expert advice and latest trends in digital marketing and branding from the MediaMatic Studio team.",
+        url: "https://mediamaticstudio.com/blog",
     },
 };
 

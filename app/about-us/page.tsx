@@ -5,12 +5,17 @@ import { BrandStatement } from "@/components/BrandStatement";
 import { Contact } from "@/components/Contact";
 
 export const metadata: Metadata = {
-    title: "About Us | MediaMatic Studio",
-    description: "Learn more about MediaMatic Studio, our journey, vision, and the team driving digital excellence In Coimbatore and beyond.",
+    title: "About MediaMatic Studio | Brands & Business Growth in Coimbatore",
+    description: "MediaMatic Studio is a premier creative branding and digital agency in Coimbatore. Scale your brand with our expert SEO, SMM, and web development services.",
     alternates: {
         canonical: "/about-us/",
     },
-    keywords: ["About MediaMatic Studio", "Branding Agency Coimbatore", "Digital Marketing Team", "Web Development Company History"],
+    keywords: ["About MediaMatic Studio", "Branding Agency Coimbatore", "Digital Marketing Agency", "Web Development Company"],
+    openGraph: {
+        title: "About MediaMatic Studio | Digital Marketing & Branding Agency",
+        description: "Scale your brand with MediaMatic Studio. Discover our mission and the experts behind our success.",
+        url: "https://mediamaticstudio.com/about-us",
+    },
 };
 
 export default function AboutPage() {
